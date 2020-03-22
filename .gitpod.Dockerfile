@@ -1,4 +1,3 @@
-
 FROM gitpod/workspace-full-vnc:latest
 USER gitpod
 SHELL [ "/usr/bin/sudo", "/bin/bash", "-cl" ]

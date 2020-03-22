@@ -1,3 +1,3 @@
-Red [Title: "Simple hello world script"]
-x: ask "What's your name?: "
-prin [ "Well, Hello" x newline ]
+Red [ Title: "Hello World" ]
+
+print "Hello World From ^(esc)[1;31mRed^(esc)[m"

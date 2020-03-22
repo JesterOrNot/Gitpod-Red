@@ -7,7 +7,8 @@ RUN sudo dpkg --add-architecture i386 \
     libcurl4:i386
 WORKDIR /opt/redlang
 RUN sudo bash -c "curl -s \"https://static.red-lang.org/dl/auto/linux/red-latest\" > red \
-    && sudo chmod +x red \
-    && echo \"quit\" | /opt/redlang/red; \
-    sudo chown -hR gitpod /opt /home/gitpod/.red"
+    && sudo chmod +x red"
+# RUN echo "quit" | /opt/redlang/red; \
+#     sudo chown -hR gitpod /opt /home/gitpod/.red"
+
 ENV PATH=/opt/redlang:$PATH

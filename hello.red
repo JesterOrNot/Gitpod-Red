@@ -1,3 +1,3 @@
 Red [Title: "Simple hello world script"]
-
-print "Hello World From Red!"
+x: ask "What's your name?: "
+prin [ "Well, Hello" x newline ]

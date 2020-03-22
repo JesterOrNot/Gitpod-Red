@@ -6,8 +6,9 @@ RUN dpkg --add-architecture i386 \
     && apt-get install -y \
         libc6:i386 \
         libcurl4:i386
-WORKDIR /opt/red
+WORKDIR /opt/redlang
 RUN curl -s "https://static.red-lang.org/dl/auto/linux/red-latest" > red \
     && chmod +x red \
     && chown -hR gitpod /opt
-ENV PATH=/opt/red:$PATH
+RUN /opt/redlang/red -u
+ENV PATH=/opt/redlang:$PATH

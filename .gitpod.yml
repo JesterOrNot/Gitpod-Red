@@ -2,3 +2,10 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - command: red --version
+ports:
+  - port: 6080
+    onOpen: ignore
+  - port: 5900
+    onOpen: ignore
+  - port: 35900
+    onOpen: ignore

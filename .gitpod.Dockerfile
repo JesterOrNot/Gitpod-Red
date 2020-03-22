@@ -10,5 +10,5 @@ WORKDIR /opt/redlang
 RUN curl -s "https://static.red-lang.org/dl/auto/linux/red-latest" > red \
     && chmod +x red \
     && chown -hR gitpod /opt
-RUN /opt/redlang/red -u
+RUN echo "quit" | /opt/redlang/red
 ENV PATH=/opt/redlang:$PATH

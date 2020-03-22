@@ -9,3 +9,6 @@ ports:
     onOpen: ignore
   - port: 35900
     onOpen: ignore
+vscode:
+  extensions:
+    - red-auto.red@0.3.6:nbKIGnraEz5MxNHzPoio7g==

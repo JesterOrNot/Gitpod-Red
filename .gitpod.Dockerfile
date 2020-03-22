@@ -8,5 +8,5 @@ RUN sudo dpkg --add-architecture i386 \
         libcurl4:i386
 WORKDIR /opt/red
 RUN sudo curl -s "https://static.red-lang.org/dl/auto/linux/red-latest" > red \
-    && chmod +x red
+    && sudo chmod +x red
 ENV PATH=/opt/red:$PATH

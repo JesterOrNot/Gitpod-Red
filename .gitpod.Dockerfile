@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full-vnc:latest
 USER gitpod
 SHELL [ "/usr/bin/sudo", "/bin/bash", "-cl" ]
 RUN dpkg --add-architecture i386 \

@@ -1,7 +1,7 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - command: red --version
+  - command: red hello.red
 ports:
   - port: 6080
     onOpen: ignore
